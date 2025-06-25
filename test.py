@@ -179,7 +179,7 @@ class Sprite(pygame.sprite.Sprite):
                     screen.blit(self.hit_r[self.cur_cadr], self.rect)
                 else:
                     screen.blit(self.hit_l[self.cur_cadr], self.rect)
-                self.move = False
+            self.move = False
         else:
             if self.right:
                 screen.blit(self.kadr_smerti_r, self.rect)
@@ -266,7 +266,7 @@ class Person(Sprite):
                         screen.blit(self.hit_r[self.cur_cadr], self.rect)
                     else:
                         screen.blit(self.hit_l[self.cur_cadr], self.rect)
-                    self.move = False
+                self.move = False
             else:
                 if self.right:
                     screen.blit(self.weapon_r, self.rect)
